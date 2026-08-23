@@ -1,282 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Dr. Shayan Shirshekar | Human Factors & UX Research</title>
+<title>Dr. Shayan Shirshekar | Human Factors & UX Research</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fa;
-      color: #172033;
-      line-height: 1.5;
-    }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #172033;
+    line-height: 1.6;
+}
 
-    .hero {
-      background: #14213d;
-      color: white;
-      text-align: center;
-      padding: 70px 20px 65px;
+.hero {
+    background: #14213d;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0 0 10px;
+    font-size: 42px;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 17px;
+    color: #d9e2f2;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 25px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: auto;
+    color: #526174;
+}
+
+.cases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 28px;
+    text-decoration: none;
+    color: inherit;
+    border-top: 4px solid #2f6fda;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.number {
+    color: #2f6fda;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #526174;
+    font-size: 15px;
+}
+
+.tags {
+    margin-top: 18px;
+}
+
+.tag {
+    display: inline-block;
+    background: #edf3ff;
+    color: #2f6fda;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin: 3px 3px 3px 0;
+}
+
+.view {
+    display: block;
+    margin-top: 22px;
+    color: #2f6fda;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.expertise {
+    background: white;
+    margin-top: 45px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+}
+
+.expertise h2 {
+    margin-top: 0;
+}
+
+.expertise p {
+    color: #526174;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    color: #718096;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    .cases {
+        grid-template-columns: 1fr;
     }
 
     .hero h1 {
-      margin: 0 0 10px;
-      font-size: 42px;
-    }
-
-    .subtitle {
-      color: #d9e2f2;
-      font-size: 18px;
-      margin-bottom: 28px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 11px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      background: #2d6cdf;
-      color: white;
-    }
-
-    .button.secondary {
-      background: white;
-      color: #14213d;
-    }
-
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 55px 20px;
-    }
-
-    .intro {
-      text-align: center;
-      margin-bottom: 38px;
-    }
-
-    .intro h2 {
-      margin-bottom: 8px;
-      font-size: 28px;
-    }
-
-    .intro p {
-      margin: 0;
-      color: #5b6678;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 26px;
-      border-radius: 9px;
-      box-shadow: 0 3px 14px rgba(20, 33, 61, 0.08);
-      border-top: 4px solid #2d6cdf;
-    }
-
-    .number {
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      color: #2d6cdf;
-    }
-
-    .card h3 {
-      font-size: 20px;
-      margin: 8px 0 10px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #5b6678;
-      margin-bottom: 16px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #eef3fb;
-      color: #2455a4;
-      padding: 4px 7px;
-      border-radius: 4px;
-      font-size: 11px;
-      margin: 2px;
-    }
-
-    .expertise {
-      margin-top: 40px;
-      background: white;
-      padding: 28px;
-      border-radius: 9px;
-      text-align: center;
-      box-shadow: 0 3px 14px rgba(20, 33, 61, 0.06);
-    }
-
-    .expertise h2 {
-      margin-top: 0;
-      font-size: 24px;
-    }
-
-    .skills {
-      color: #4f5c70;
-      font-size: 15px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #7a8494;
-      font-size: 13px;
-    }
-
-    @media (max-width: 750px) {
-      .projects {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
         font-size: 34px;
-      }
     }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
-  <section class="hero">
-
+<section class="hero">
     <h1>Dr. Shayan Shirshekar</h1>
+    <p>Human Factors Researcher | UX Researcher | Experimental Psychologist</p>
+</section>
 
-    <div class="subtitle">
-      Human Factors Researcher | UX Researcher | Experimental Psychologist
-    </div>
-
-    <div class="buttons">
-
-      <a class="button"
-         href="Shayan_Shirshekar_Human_Factors_UX_Research_Portfolio.pdf">
-        View Portfolio
-      </a>
-
-      <a class="button secondary"
-         href="Shayan_Shirshekar_Human_Factors_UX_Research_Portfolio.pdf">
-        Download PDF
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <main class="container">
+<main class="container">
 
     <section class="intro">
-
-      <h2>Research Portfolio</h2>
-
-      <p>
-        Selected work in human factors, UX research, experimental psychology,
-        and human-AI interaction.
-      </p>
-
+        <h2>Research Portfolio</h2>
+        <p>
+            Selected research in human factors, UX research,
+            experimental psychology, and human-technology interaction.
+        </p>
     </section>
 
+    <section class="cases">
 
-    <section class="projects">
+        <a class="card" href="case-study-1.html">
+            <div class="number">CASE STUDY 01</div>
 
+            <h3>AI-Supported Learning</h3>
 
-      <div class="card">
+            <p>
+                Evaluating AI-supported tools for research
+                methods education and perceived competence.
+            </p>
 
-        <div class="number">01</div>
+            <div class="tags">
+                <span class="tag">Mixed Methods</span>
+                <span class="tag">Human-AI</span>
+                <span class="tag">Experimental Research</span>
+            </div>
 
-        <h3>AI-Supported Learning</h3>
-
-        <p>
-          Evaluating AI-supported tools for research methods education.
-        </p>
-
-        <span class="tag">Mixed Methods</span>
-        <span class="tag">Human-AI</span>
-        <span class="tag">Experimental Research</span>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="number">02</div>
-
-        <h3>Human Factors & Automation</h3>
-
-        <p>
-          Research examining trust, human performance, and interaction
-          with automated systems.
-        </p>
-
-        <span class="tag">Human Factors</span>
-        <span class="tag">Trust</span>
-        <span class="tag">Human Performance</span>
-
-      </div>
+            <span class="view">VIEW CASE STUDY →</span>
+        </a>
 
 
-      <div class="card">
+        <a class="card" href="case-study-2.html">
+            <div class="number">CASE STUDY 02</div>
 
-        <div class="number">03</div>
+            <h3>Human Factors & Automation</h3>
 
-        <h3>Stress and Personality in Simulated Spaceflight</h3>
+            <p>
+                Research examining trust, human performance,
+                and interaction with automated systems.
+            </p>
 
-        <p>
-          Examining relationships between personality, stress, and psychological responses in a simulated spaceflight environment.
-        </p>
+            <div class="tags">
+                <span class="tag">Human Factors</span>
+                <span class="tag">Trust</span>
+                <span class="tag">Human-Autonomy</span>
+            </div>
 
-        <span class="tag">Experimental Design</span>
-        <span class="tag">Spaceflight</span>
-        <span class="tag">Behavioral Research</span>
+            <span class="view">VIEW CASE STUDY →</span>
+        </a>
 
-      </div>
 
+        <a class="card" href="case-study-3.html">
+            <div class="number">CASE STUDY 03</div>
+
+            <h3>Stress & Communication Delay</h3>
+
+            <p>
+                Experimental research examining stress,
+                communication, and personality during simulated
+                spaceflight missions.
+            </p>
+
+            <div class="tags">
+                <span class="tag">Experimental Design</span>
+                <span class="tag">Spaceflight</span>
+                <span class="tag">Behavioral Research</span>
+            </div>
+
+            <span class="view">VIEW CASE STUDY →</span>
+        </a>
 
     </section>
 
 
     <section class="expertise">
+        <h2>Research Expertise</h2>
 
-      <h2>Research Expertise</h2>
-
-      <div class="skills">
-        Human Factors • UX Research • Experimental Design •
-        Mixed Methods • Usability • Human-AI Interaction •
-        Quantitative Analysis • Behavioral Research
-      </div>
-
+        <p>
+            Human Factors · UX Research · Experimental Design ·
+            Mixed Methods · Usability · Human-AI Interaction ·
+            Quantitative Analysis · Behavioral Research
+        </p>
     </section>
 
-  </main>
+</main>
 
-
-  <footer>
+<footer>
     © 2026 Dr. Shayan Shirshekar
-  </footer>
+</footer>
 
 </body>
 </html>
