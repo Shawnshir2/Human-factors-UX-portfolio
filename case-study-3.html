@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stress & Communication Delay | Dr. Shayan Shirshekar</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #172033;
+    line-height: 1.6;
+}
+
+.hero {
+    background: #14213d;
+    color: white;
+    padding: 45px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.back {
+    color: #d9e2f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back:hover {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin: 25px 0 8px;
+}
+
+.subtitle {
+    color: #d9e2f2;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.intro,
+.section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    margin-bottom: 22px;
+}
+
+.intro h2,
+.section h2 {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.intro p,
+.section p {
+    color: #526174;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.stat {
+    background: #edf3ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 25px;
+    color: #2f6fda;
+}
+
+.stat span {
+    font-size: 13px;
+    color: #526174;
+}
+
+.tags {
+    margin-top: 18px;
+}
+
+.tag {
+    display: inline-block;
+    background: #edf3ff;
+    color: #2f6fda;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.step {
+    background: #edf3ff;
+    color: #2455a4;
+    padding: 11px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.arrow {
+    color: #2f6fda;
+    font-weight: bold;
+}
+
+.measure-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.box {
+    border: 1px solid #dfe5ee;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.box h3 {
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.box p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.highlight {
+    border-left: 4px solid #2f6fda;
+    padding-left: 18px;
+    margin-top: 15px;
+}
+
+.highlight p {
+    margin: 0;
+    color: #172033;
+    font-weight: 600;
+}
+
+ul {
+    color: #526174;
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.publication {
+    background: #edf3ff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.publication p {
+    margin: 0;
+    color: #172033;
+    font-size: 14px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.nav a {
+    background: #2f6fda;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nav a.secondary {
+    background: #e9edf3;
+    color: #172033;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #718096;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .stats,
+    .measure-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <a class="back" href="index.html">
+            ← Back to Research Portfolio
+        </a>
+
+        <h1>Stress & Communication Delay</h1>
+
+        <div class="subtitle">
+            Experimental research in simulated long-duration spaceflight
+        </div>
+
+    </div>
+
+</section>
+
+
+<main class="container">
+
+
+    <section class="intro">
+
+        <h2>The Research Question</h2>
+
+        <p>
+            How does communication delay affect stress during simulated
+            long-duration spaceflight, and do individual personality
+            differences help explain variation in the stress response?
+        </p>
+
+        <div class="tags">
+            <span class="tag">Experimental Design</span>
+            <span class="tag">Stress</span>
+            <span class="tag">Personality</span>
+            <span class="tag">Spaceflight</span>
+        </div>
+
+    </section>
+
+
+    <section class="stats">
+
+        <div class="stat">
+            <strong>100</strong>
+            <span>Participants</span>
+        </div>
+
+        <div class="stat">
+            <strong>87</strong>
+            <span>Physiological Sample</span>
+        </div>
+
+        <div class="stat">
+            <strong>45 min</strong>
+            <span>Mission Duration</span>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Study Design</h2>
+
+        <p>
+            Participants completed simulated mission scenarios under
+            different communication conditions. The repeated-measures
+            design allowed responses to be compared within participants.
+        </p>
+
+        <div class="process">
+
+            <div class="step">Baseline</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Control Mission</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Break + Personality</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Delayed Mission</div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Measures</h2>
+
+        <div class="measure-grid">
+
+            <div class="box">
+
+                <h3>Subjective Measures</h3>
+
+                <p>
+                    Self-reported stress and perceived communication
+                    quality were used to capture participants' experience
+                    during the missions.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <h3>Physiological Measures</h3>
+
+                <p>
+                    Heart-rate data were collected using a Polar H10
+                    chest strap and used to derive physiological stress
+                    indicators.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>My Role</h2>
+
+        <ul>
+            <li>Designed and conducted the experimental study.</li>
+            <li>Developed the simulated mission conditions.</li>
+            <li>Collected subjective and physiological measures.</li>
+            <li>Conducted statistical analyses and evaluated model assumptions.</li>
+            <li>Interpreted findings in the context of human performance during spaceflight.</li>
+        </ul>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Analysis</h2>
+
+        <div class="process">
+
+            <div class="step">Data Screening</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Repeated-Measures Analysis</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Paired Comparisons</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Regression</div>
+
+        </div>
+
+        <p>
+            The analytical approach was refined after examining the
+            relationships among the stress measures, rather than relying
+            solely on the initially considered statistical model.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Key Findings</h2>
+
+        <div class="highlight">
+
+            <p>
+                Communication quality changed significantly under
+                communication delay, while the expected increase in
+                stress was not observed.
+            </p>
+
+        </div>
+
+        <p>
+            The findings illustrate how changes in the communication
+            environment can affect the participant experience without
+            necessarily producing the same change in physiological or
+            subjective stress.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Why It Matters</h2>
+
+        <p>
+            Human performance in long-duration missions depends on more
+            than system capability. Communication conditions, individual
+            differences, and the way people experience system constraints
+            can all influence how humans interact with complex environments.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Publication</h2>
+
+        <div class="publication">
+
+            <p>
+                Research from this work contributes to my broader
+                research program in human factors, spaceflight,
+                behavioral health, and human performance.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="nav">
+
+        <a class="secondary" href="index.html">
+            ← Back to Portfolio
+        </a>
+
+        <a href="case-study-1.html">
+            ← Previous Case Study
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+    © 2026 Dr. Shayan Shirshekar
+</footer>
+
+</body>
+</html>
