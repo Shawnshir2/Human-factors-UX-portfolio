@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Human Factors & Automation | Dr. Shayan Shirshekar</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #172033;
+    line-height: 1.6;
+}
+
+.hero {
+    background: #14213d;
+    color: white;
+    padding: 45px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.back {
+    color: #d9e2f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back:hover {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin: 25px 0 8px;
+}
+
+.subtitle {
+    color: #d9e2f2;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.intro,
+.section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    margin-bottom: 22px;
+}
+
+.intro h2,
+.section h2 {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.intro p,
+.section p {
+    color: #526174;
+}
+
+.tags {
+    margin-top: 18px;
+}
+
+.tag {
+    display: inline-block;
+    background: #edf3ff;
+    color: #2f6fda;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.step {
+    background: #edf3ff;
+    color: #2455a4;
+    padding: 11px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.arrow {
+    color: #2f6fda;
+    font-weight: bold;
+}
+
+.translation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.box {
+    border: 1px solid #dfe5ee;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.box h3 {
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.box p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.highlight {
+    border-left: 4px solid #2f6fda;
+    padding-left: 18px;
+    margin-top: 15px;
+}
+
+.highlight p {
+    margin: 0;
+    color: #172033;
+    font-weight: 600;
+}
+
+ul {
+    color: #526174;
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.publication {
+    background: #edf3ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.publication p {
+    margin: 0;
+    color: #172033;
+    font-size: 14px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.nav a {
+    background: #2f6fda;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nav a.secondary {
+    background: #e9edf3;
+    color: #172033;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #718096;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .translation {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <a class="back" href="index.html">
+            ← Back to Research Portfolio
+        </a>
+
+        <h1>Human Factors & Automation</h1>
+
+        <div class="subtitle">
+            Modeling trust in human-autonomy teams
+        </div>
+
+    </div>
+
+</section>
+
+
+<main class="container">
+
+
+    <section class="intro">
+
+        <h2>The Research Problem</h2>
+
+        <p>
+            Human interaction with autonomous systems depends partly on
+            how much users trust the system. Both insufficient trust and
+            excessive trust can create challenges for effective human-
+            autonomy teaming.
+        </p>
+
+        <div class="tags">
+            <span class="tag">Human Factors</span>
+            <span class="tag">Trust</span>
+            <span class="tag">Human-Autonomy Teaming</span>
+            <span class="tag">System Design</span>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Research Question</h2>
+
+        <p>
+            How can psychological trust constructs be translated into
+            measurable human-factors requirements for human-autonomy
+            systems?
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Human Factors → Engineering</h2>
+
+        <p>
+            A central goal of the work was connecting psychological
+            research on trust with practical considerations for
+            system evaluation and design.
+        </p>
+
+        <div class="process">
+
+            <div class="step">Human Factors</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Trust Constructs</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Test & Evaluation</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">System Design</div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>My Contribution</h2>
+
+        <ul>
+            <li>Examined trust as a human-factors construct in human-autonomy teaming.</li>
+            <li>Connected psychological trust concepts to system-level evaluation.</li>
+            <li>Considered how trust could be operationalized through measurable constructs.</li>
+            <li>Helped translate the research problem into a framework relevant to engineering and system design.</li>
+        </ul>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Research-to-Design Translation</h2>
+
+        <div class="translation">
+
+            <div class="box">
+                <h3>Psychological Constructs</h3>
+
+                <p>
+                    Trust, reliance, expectations, and perceptions
+                    of system behavior.
+                </p>
+            </div>
+
+
+            <div class="box">
+                <h3>Human Factors Measures</h3>
+
+                <p>
+                    Observable and measurable indicators that can
+                    be used to evaluate human-system interaction.
+                </p>
+            </div>
+
+
+            <div class="box">
+                <h3>System Evaluation</h3>
+
+                <p>
+                    Testing whether system behavior supports
+                    appropriate levels of human reliance.
+                </p>
+            </div>
+
+
+            <div class="box">
+                <h3>Design Implications</h3>
+
+                <p>
+                    Using evidence about human behavior to inform
+                    the development and evaluation of autonomous systems.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Why It Matters</h2>
+
+        <div class="highlight">
+
+            <p>
+                The value of human factors research is not only
+                understanding people, but translating that understanding
+                into requirements, measures, and decisions that improve
+                system design.
+            </p>
+
+        </div>
+
+        <p>
+            This work demonstrates an approach to connecting behavioral
+            science with engineering and human-autonomy system development.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Publication</h2>
+
+        <div class="publication">
+
+            <p>
+                Fang et al. (2024), IEEE International Conference on
+                Human-Machine Systems (ICHMS).
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="nav">
+
+        <a class="secondary" href="index.html">
+            ← Back to Portfolio
+        </a>
+
+        <a href="case-study-3.html">
+            Next Case Study →
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+    © 2026 Dr. Shayan Shirshekar
+</footer>
+
+</body>
+</html>
