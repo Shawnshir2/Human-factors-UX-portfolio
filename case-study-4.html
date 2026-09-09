@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Accessible Learning & Educational UX | Dr. Shayan Shirshekar</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #172033;
+    line-height: 1.6;
+}
+
+.hero {
+    background: #14213d;
+    color: white;
+    padding: 45px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.back {
+    color: #d9e2f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back:hover {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin: 25px 0 8px;
+}
+
+.subtitle {
+    color: #d9e2f2;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.intro {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    margin-bottom: 25px;
+}
+
+.intro h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.section {
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #172033;
+}
+
+.section h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.section p {
+    color: #526174;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat {
+    background: #edf3ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 25px;
+    color: #2f6fda;
+}
+
+.stat span {
+    font-size: 13px;
+    color: #526174;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.step {
+    background: #edf3ff;
+    color: #2455a4;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.arrow {
+    color: #2f6fda;
+    font-weight: bold;
+}
+
+.tags {
+    margin-top: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background: #edf3ff;
+    color: #2f6fda;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+.highlight {
+    border-left: 4px solid #2f6fda;
+    padding-left: 18px;
+    margin-top: 15px;
+}
+
+.highlight p {
+    margin: 0;
+    color: #172033;
+    font-weight: 600;
+}
+
+ul {
+    color: #526174;
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.nav a {
+    background: #2f6fda;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nav a.secondary {
+    background: #e9edf3;
+    color: #172033;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #718096;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <a class="back" href="index.html">
+            ← Back to Research Portfolio
+        </a>
+
+        <h1>Accessible Learning &amp; Educational UX</h1>
+
+        <div class="subtitle">
+            Designing and evaluating educational content for space life sciences
+        </div>
+
+    </div>
+
+</section>
+
+
+<main class="container">
+
+
+    <section class="intro">
+
+        <h2>The Research Question</h2>
+
+        <p>
+            Does matching the method of educational content delivery
+            with an individual's cognitive style improve learning
+            outcomes?
+        </p>
+
+        <div class="tags">
+            <span class="tag">Experimental Design</span>
+            <span class="tag">Learning Research</span>
+            <span class="tag">Educational UX</span>
+            <span class="tag">Space Life Sciences</span>
+        </div>
+
+    </section>
+
+
+    <section class="stats">
+
+        <div class="stat">
+            <strong>40</strong>
+            <span>Participants</span>
+        </div>
+
+        <div class="stat">
+            <strong>2</strong>
+            <span>Content Formats</span>
+        </div>
+
+        <div class="stat">
+            <strong>3</strong>
+            <span>Testing Points</span>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Context</h2>
+
+        <p>
+            The project addressed a shortage of accessible educational
+            material covering psychosocial issues in space life sciences,
+            including topics such as isolation, confinement, and crew
+            cohesion.
+        </p>
+
+        <p>
+            I developed educational material covering these topics and
+            used the study to examine whether different approaches to
+            presenting the same information affected learning outcomes.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Study Design</h2>
+
+        <div class="process">
+
+            <div class="step">Screening</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Pretest</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Learning</div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">Posttests</div>
+
+        </div>
+
+        <p>
+            Participants completed a screening process to determine
+            cognitive style before entering the experimental portion
+            of the study.
+        </p>
+
+        <p>
+            Participants were randomly assigned to receive either
+            text-only educational material or the same material
+            supported by images and video.
+        </p>
+
+        <p>
+            Learning was measured using a pretest, an immediate
+            post-test, and a second post-test one week later to
+            examine knowledge retention.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>What I Designed</h2>
+
+        <p>
+            Two versions of the same educational module were developed.
+            One consisted exclusively of text, while the second combined
+            text with more visually stimulating material, including
+            images and video.
+        </p>
+
+        <p>
+            I also developed the assessment used to evaluate participants'
+            knowledge of the material and conducted item analysis before
+            the experimental study.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>My Role</h2>
+
+        <ul>
+            <li>Developed educational content focused on psychosocial issues in spaceflight.</li>
+            <li>Designed the experimental study and participant screening process.</li>
+            <li>Developed and evaluated the learning assessment.</li>
+            <li>Recruited and screened participants.</li>
+            <li>Collected and analyzed study data.</li>
+            <li>Conducted statistical analysis and interpreted the findings.</li>
+        </ul>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Research Methods & Analysis</h2>
+
+        <h3>Study Methods</h3>
+
+        <ul>
+            <li>Participant screening</li>
+            <li>Random assignment</li>
+            <li>Experimental design</li>
+            <li>Pre/post testing</li>
+            <li>Knowledge retention testing</li>
+        </ul>
+
+        <h3>Quantitative Analysis</h3>
+
+        <ul>
+            <li>Descriptive statistics</li>
+            <li>Item analysis</li>
+            <li>2 × 2 × 3 mixed factorial repeated-measures ANOVA</li>
+            <li>Post-hoc comparisons with Bonferroni correction</li>
+            <li>IBM SPSS</li>
+        </ul>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Key Findings</h2>
+
+        <div class="highlight">
+
+            <p>
+                Participants significantly improved their knowledge
+                following exposure to the educational material, with
+                learning retained at the one-week post-test.
+            </p>
+
+        </div>
+
+        <p>
+            Cognitive style did not have a significant main effect,
+            and matching cognitive style with the method of material
+            delivery did not produce the expected improvement in
+            learning outcomes.
+        </p>
+
+        <p>
+            Interestingly, participants receiving the text-only
+            material outperformed those receiving the visually
+            supported material in the post-test comparisons.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Why It Matters</h2>
+
+        <p>
+            The study provided a way to evaluate educational design
+            decisions using real participant data rather than assuming
+            that a particular presentation format would be more effective.
+        </p>
+
+        <p>
+            The findings also showed that adding images and video did
+            not automatically improve learning. The results highlighted
+            the importance of testing how information is presented and
+            how people actually respond to different learning experiences.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <h2>Thesis</h2>
+
+        <p>
+            Master's thesis, University of Houston, 2016.
+        </p>
+
+        <p>
+            <strong>
+                Exploring the Relationship Between Delivery Methods and
+                Cognitive Style in Relation to the Availability of
+                Psycho-Social Content in Space Life Sciences Education Material
+            </strong>
+        </p>
+
+    </section>
+
+
+    <div class="nav">
+
+        <a class="secondary" href="index.html">
+            ← Back to Portfolio
+        </a>
+
+        <a href="case-study-5.html">
+            Next Case Study →
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+    © 2026 Dr. Shayan Shirshekar
+</footer>
+
+</body>
+</html>
